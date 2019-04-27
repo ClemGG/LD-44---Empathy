@@ -31,7 +31,8 @@ public class DialogueManager : MonoBehaviour
 
     private void Awake()
     {
-        currentTextCanvas.gameObject.SetActive(false);
+        if(currentTextCanvas)
+            currentTextCanvas.gameObject.SetActive(false);
     }
 
 
