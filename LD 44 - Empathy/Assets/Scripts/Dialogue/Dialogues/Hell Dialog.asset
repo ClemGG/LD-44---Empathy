@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3d6005d9d9458d4395e73c7623f23f6, type: 3}
+  m_Name: Hell Dialog
+  m_EditorClassIdentifier: 
+  "r\xE9pliques":
+  - repliqueText: What should I have done?
+  - repliqueText: I am hopeless.
+  - repliqueText: She was everything I had. Everything I struggled for.
+  - repliqueText: '... Can you see me from Heaven?'
+  - repliqueText: I hope you are happy now, wherever you are.
+  - repliqueText: I wish I could join you.
+  - repliqueText: The world is so cold down there without you.
+  - repliqueText: I... Am so cold...
+  index: 1
