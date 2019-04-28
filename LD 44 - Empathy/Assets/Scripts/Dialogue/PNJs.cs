@@ -51,6 +51,7 @@ public class PNJs : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.RightShift))
             {
+                Counter.instance.Beep();
                 EndInteraction();
             }
         }

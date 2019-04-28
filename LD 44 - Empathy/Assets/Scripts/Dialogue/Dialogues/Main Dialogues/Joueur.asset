@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3d6005d9d9458d4395e73c7623f23f6, type: 3}
+  m_Name: Joueur
+  m_EditorClassIdentifier: 
+  "r\xE9pliques":
+  - repliqueText: I'm back, Helena...
+  - repliqueText: Are you happy where you are?
+  - repliqueText: 'Who am I kidding? '
+  - repliqueText: Nothing could be worse than this place.
+  - repliqueText: At least, you don't have to bear any pain anymore.
+  - repliqueText: Heh... What irony. The one that gets to live is the one that has
+      no reason to do so.
+  - repliqueText: '...'
+  - repliqueText: Maybe that's true.
+  - repliqueText: Do I still have a reason not to join you ?
+  - repliqueText: Oh Helena, I... I don't know what to do anymore.
+  - repliqueText: Without you, nothing makes sense anymore.
+  - repliqueText: I just wish to see you again.
+  - repliqueText: Even if I have to pay the price with my life.
+  index: 3

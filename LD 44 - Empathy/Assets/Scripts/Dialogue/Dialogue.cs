@@ -30,7 +30,6 @@ public class Dialogue : ScriptableObject
         else
         {
             onDialogueEnded?.Invoke();
-            index = 0;
             return null;
         }
     }

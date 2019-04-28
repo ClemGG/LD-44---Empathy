@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Counter : MonoBehaviour
 {
-    public int points = 0;
+    private int points = 0;
     private PlayerMovementStreet pms;
 
     public static Counter instance;
@@ -30,7 +30,7 @@ public class Counter : MonoBehaviour
     public void AddPoints(int ID)
     {
         points++;
-        pms.speed = 5f / (float)points;
+        pms.speed = 6f - (float)points;
         PlayerPrefs.SetInt($"Has_PNJ_{ID}_Been_Saved", 1);
 
         if(points == 5)
@@ -42,6 +42,11 @@ public class Counter : MonoBehaviour
     public void GetEndingBasedOnPointsLeft()
     {
         PlayerPrefs.SetInt("Nobody", points == 0 ? 1 : 0);
-        PlayerPrefs.SetInt("Everybody", points == 5 ? 1 : 0);
+        PlayerPrefs.SetInt("Everyone", points == 5 ? 1 : 0);
+    }
+
+    public void Beep()
+    {
+        GetComponent<AudioSource>().Play();
     }
 }

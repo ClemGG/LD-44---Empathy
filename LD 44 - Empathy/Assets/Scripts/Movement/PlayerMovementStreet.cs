@@ -13,6 +13,7 @@ public class PlayerMovementStreet : MonoBehaviour
     private float moveInput;
 
     private Animator a;
+    private DialogueManager dm;
     private PlayableDirector dir;
     private SpriteRenderer sr;
     private Transform t;
@@ -26,6 +27,9 @@ public class PlayerMovementStreet : MonoBehaviour
         t = transform;
 
         flamme.SetActive(false);
+
+        dm = GetComponent<DialogueManager>();
+        dm.dialogues[0].onDialogueEnded += GoToHellOrHeaven;
     }
 
 
@@ -69,14 +73,20 @@ public class PlayerMovementStreet : MonoBehaviour
         {
             Counter.instance.GetEndingBasedOnPointsLeft();
 
-            StartCoroutine(ReturnToMenu());
             moveInput = 0f;
             a.SetBool("isWalking", false);
-            dir.Play();
+            dm.ReadDialogue(0);
             enabled = false;
         }
     }
 
+
+    public void GoToHellOrHeaven()
+    {
+        StartCoroutine(ReturnToMenu());
+        dir.Play();
+        a.SetBool("isCrying", true);
+    }
 
     private IEnumerator ReturnToMenu()
     {

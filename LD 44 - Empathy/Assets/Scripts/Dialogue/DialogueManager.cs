@@ -43,7 +43,14 @@ public class DialogueManager : MonoBehaviour
         currentDialogueID = dialogueID;
         currentTextCanvas.text = dialogues[currentDialogueID].StartDialogue();
 
-        c = StartCoroutine(ReadAllDialogue());
+        if (c != null)
+        {
+            StopCoroutine(c);
+            c = null;
+        }
+
+        if (c == null)
+            c = StartCoroutine(ReadAllDialogue());
     }
 
     public void ReadDialogue(int dialogueID, Text textCanvas)
