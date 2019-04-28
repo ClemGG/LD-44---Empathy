@@ -63,16 +63,15 @@ public class HeavenEnding : MonoBehaviour
 
     private IEnumerator SpawnPNJ(int i)
     {
-        float t = 0f;
 
+        float t = 0f;
         if (PlayerPrefs.GetInt($"Has_PNJ_{i}_Been_Saved") == 1)
         {
             while (t < 1f)
             {
-                t -= Time.unscaledDeltaTime * apparitionSpeed;
+                t += Time.unscaledDeltaTime * apparitionSpeed;
                 float a = fadeCurve.Evaluate(t);
-                Color newCol = pnjs[i].color;
-                pnjs[i].color = new Color(newCol.r, newCol.g, newCol.b, a);
+                pnjs[i].color = new Color(pnjs[i].color.r, pnjs[i].color.g, pnjs[i].color.b, a);
                 yield return 0;
             }
         }

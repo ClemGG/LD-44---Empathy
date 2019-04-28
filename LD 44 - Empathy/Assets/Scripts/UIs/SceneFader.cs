@@ -70,7 +70,10 @@ public class SceneFader : MonoBehaviour {
 
 
 
-
+    public void LoadSceneDirectly(int sceneIndex)
+    {
+        SceneManager.LoadScene(sceneIndex);
+    }
 
 
 

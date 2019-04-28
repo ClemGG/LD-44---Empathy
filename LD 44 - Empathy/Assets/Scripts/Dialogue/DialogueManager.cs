@@ -38,17 +38,17 @@ public class DialogueManager : MonoBehaviour
 
 
 
-    public void ReadDialogue(int ID)
+    public void ReadDialogue(int dialogueID)
     {
-        currentDialogueID = ID;
+        currentDialogueID = dialogueID;
         currentTextCanvas.text = dialogues[currentDialogueID].StartDialogue();
 
         c = StartCoroutine(ReadAllDialogue());
     }
 
-    public void ReadDialogue(int ID, Text textCanvas)
+    public void ReadDialogue(int dialogueID, Text textCanvas)
     {
-        currentDialogueID = ID;
+        currentDialogueID = dialogueID;
         
         if (c != null)
         {
@@ -61,9 +61,7 @@ public class DialogueManager : MonoBehaviour
 
         currentTextCanvas = textCanvas;
         currentTextCanvas.text = dialogues[currentDialogueID].StartDialogue();
-
-        print(c == null);
-
+        
         if(c == null)
             c = StartCoroutine(ReadAllDialogue());
     }

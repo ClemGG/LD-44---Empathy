@@ -562,7 +562,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Made by Quasar47 with Unity 2018.3.7f1 pour la Lundum Dare 44
+  m_Text: Made by Quasar47 with Unity 2018.3.7f1 for the Lundum Dare 44
 --- !u!222 &531433619
 CanvasRenderer:
   m_ObjectHideFlags: 0
