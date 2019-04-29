@@ -806,6 +806,26 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7624465410596387486, guid: 5c032b3ff5118d64ab207d9d1726ffb7,
+        type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7624465410596387486, guid: 5c032b3ff5118d64ab207d9d1726ffb7,
+        type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 7624465410596387486, guid: 5c032b3ff5118d64ab207d9d1726ffb7,
+        type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
+      objectReference: {fileID: 0}
+    - target: {fileID: 7624465410596387486, guid: 5c032b3ff5118d64ab207d9d1726ffb7,
+        type: 3}
+      propertyPath: m_MatchWidthOrHeight
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 7624465410596387484, guid: 5c032b3ff5118d64ab207d9d1726ffb7,
         type: 3}
       propertyPath: fadeSpeed
@@ -1004,6 +1024,41 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8137109058639962293, guid: 5e81ed8b215aaa44d99ecec90e70b674,
+        type: 3}
+      propertyPath: currentTextCanvas
+      value: 
+      objectReference: {fileID: 910621906}
+    - target: {fileID: 8137109058639962293, guid: 5e81ed8b215aaa44d99ecec90e70b674,
+        type: 3}
+      propertyPath: fadeSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8137109058639962293, guid: 5e81ed8b215aaa44d99ecec90e70b674,
+        type: 3}
+      propertyPath: displayDelay
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8137109058639962298, guid: 5e81ed8b215aaa44d99ecec90e70b674,
+        type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8137109058639962298, guid: 5e81ed8b215aaa44d99ecec90e70b674,
+        type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 8137109058639962298, guid: 5e81ed8b215aaa44d99ecec90e70b674,
+        type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
+      objectReference: {fileID: 0}
+    - target: {fileID: 8137109058639962298, guid: 5e81ed8b215aaa44d99ecec90e70b674,
+        type: 3}
+      propertyPath: m_MatchWidthOrHeight
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 8137109058639962288, guid: 5e81ed8b215aaa44d99ecec90e70b674,
         type: 3}
       propertyPath: m_SceneBindings.Array.size
@@ -1040,10 +1095,5 @@ PrefabInstance:
       propertyPath: m_SceneBindings.Array.data[4].value
       value: 
       objectReference: {fileID: 948585191}
-    - target: {fileID: 8137109058639962293, guid: 5e81ed8b215aaa44d99ecec90e70b674,
-        type: 3}
-      propertyPath: currentTextCanvas
-      value: 
-      objectReference: {fileID: 910621906}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e81ed8b215aaa44d99ecec90e70b674, type: 3}
